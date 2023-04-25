@@ -1,0 +1,252 @@
+/* Reset default margin and padding for all elements */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Set default font styles */
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  /* Set background colors for different sections */
+  #hero {
+    background-color: #F9F5EB;
+  }
+  
+  #about {
+    background-color: #EA5455;
+  }
+  
+  #portfolio {
+    background-color: #002B5B;
+  }
+  
+  #contact {
+    background-color: #F9F5EB;
+  }
+  
+  /* Set container styles */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 150px;
+  }
+  
+  /* Set header styles */
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    padding: 20px;
+    z-index: 100;
+  }
+  
+  nav ul {
+    list-style-type: none;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #F9F5EB;
+    text-decoration: none;
+  }
+
+  /* Set hover effect on navigation bar */
+nav ul li a:hover {
+    color: #EA5455;
+  }
+  
+  /* Set hero section styles */
+  #hero .container {
+    text-align: center;
+  }
+  
+  #hero h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  #hero p {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+  
+  #hero .cta {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #F9F5EB;
+    background-color: #EA5455;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  #hero .cta:hover {
+    background-color: #FF7F7F;
+  }
+  
+  /* Set about section styles */
+  #about .container {
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  
+  #about h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #F9F5EB;
+  }
+  
+  #about p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #333;
+  }
+  
+  /* Set portfolio section styles */
+  #portfolio .container {
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  
+  #portfolio h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #F9F5EB;
+  }
+  
+  #portfolio p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #F9F5EB;
+  }
+  
+  /* Set contact section styles */
+  #contact .container {
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  
+  #contact h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #333;
+  }
+  
+  #contact p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #333;
+  }
+  
+  .portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+  
+  .portfolio-item {
+    position: relative;
+  }
+  
+  .portfolio-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .portfolio-description {
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .portfolio-description h3,
+  .portfolio-description p,
+  .portfolio-description a {
+    color: #fff;
+    margin: 0;
+  }
+  
+  .portfolio-item:hover .portfolio-description {
+    opacity: 1;
+    
+  }
+  
+  .portfolio-description a {
+    display: inline-block;
+    margin-top: 10px;
+  }
+  
+
+  .grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 800px; /* Add max-width property */
+    margin: 0 auto; /* Add margin property to center the grid container */
+  }
+  
+  .grid-item {
+    flex: 0 0 calc(30% - 20px);
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .grid-item img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .grid-item:hover img {
+    transform: scale(1.05);
+  }
+  
+  .description {
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .grid-item:hover .description {
+    opacity: 1;
+  }
+  
+.aligncenter {
+    text-align: center;
+}
+
