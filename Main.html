@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Val's Portfolio</title>
+  <link rel="stylesheet" href="Style sheet.css">
+  <link rel="icon" href="Images/Loving_Cat.gif">
+</head>
+
+<script>
+  // Get all the grid items
+const gridItems = document.querySelectorAll('.grid-item');
+
+// Loop through each grid item
+gridItems.forEach(gridItem => {
+  // Add an event listener for window resize
+  window.addEventListener('resize', () => {
+    // Calculate the height of the grid item based on its width
+    const width = gridItem.offsetWidth;
+    const height = width * 0.75; // Adjust this value as needed
+    // Set the height of the grid item
+    gridItem.style.height = `${height}px`;
+  });
+});
+</script>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#contact">Catlery</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <div class="container">
+      <h1>Hello, I'm Val</h1>
+      <p>A Cyber Security Enthusiast based in Brighton</p>
+      <a href="#portfolio" class="cta">View My Work</a>
+    </div>
+  </section>
+
+  <section id="about">
+
+    <div class="container">
+      <h2>About Me</h2>
+      <p>As a student with a unique perspective on cybersecurity, I have been passionate about technology for years. I've spend my spare time tinkering with software, exploring Linux operating systems, and optimizing computer performance. In college, I've taken courses in IT, Graphics, and Computing, building upon my knowledge and skills in photo and video editing, website programming, and network security.</p>
+        <p>For portfolio: Created a shoping website,has to have app</p>
+    </div>
+
+    <div class="grid-container">
+      <div class="grid-item">
+        <img src="Images/HTML_logo.png" alt="Image 1">
+        <div class="description">HTML & CSS</div>
+      </div>
+      <div class="grid-item">
+        <img src="Images/Java_logo.png" alt="Image 2">
+        <div class="description">JavaScript</div>
+      </div>
+      <div class="grid-item">
+        <img src="Images/Bash_logo.png" alt="Image 3">
+        <div class="description">Bash</div>
+      </div>
+      <div class="grid-item">
+        <img src="Images/Python_Logo.png" alt="Image 4">
+        <div class="description">Python</div>
+      </div>
+      <div class="grid-item">
+        <img src="Images/Access_logo.png" alt="Image 5">
+        <div class="description">Microsoft Access</div>
+      </div>
+      <div class="grid-item">
+        <img src="Images/Scratch_Logo.png" alt="Image 6">
+        <div class="description">Scratch</div>
+      </div>
+    </div>
+    
+    
+
+  </section>
+
+  <section id="portfolio">
+    <div class="container">
+      <h2>Portfolio</h2>
+      <p>Your portfolio work description goes here.</p>
+      <section id="portfolio">
+
+        <div class="portfolio-container">
+          <div class="portfolio-item">
+            <img src="Images/Shop_website.png" alt="Image 1" class="portfolio-image">
+            <div class="portfolio-description">
+              <h3>Y2k Clothing Website</h3>
+              <p>A Y2k inspired clothing website for a mockup company I've made for my IT project</p>
+              <a href="https://github.com/LiLVal/Y2k_Website">More Info </a> 
+              <a href="https://liltrash1.github.io/" target="_blank"> See Live</a> 
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <img src="Images/Slot_game.png" alt="Image 2" class="portfolio-image">
+            <div class="portfolio-description">
+              <h3>Python Slot Game</h3>
+              <p>A casino inspired slot game writen fully in Python for my computing class</p>
+              <a href="https://github.com/LiLVal/Slot-Machine" target="_blank">More Info</a>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <img src="Images/Guizero_2048.png" alt="Image 3" class="portfolio-image">
+            <div class="portfolio-description">
+              <h3>Guizero 2048</h3>
+              <p>My recreation of 2048 written fully in Python using Guizero for my computing class</p>
+              <a href="https://github.com/LiLVal/Guizero-2048-game" target="_blank">More Info</a>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <img src="Images/Avil_ToDo.png" alt="Image 4" class="portfolio-image">
+            <div class="portfolio-description">
+              <h3>To-do list app</h3>
+              <p>A to-do list app written in Python and designed using Anvil Works for my computing class</p>
+              <a href="https://todolist.anvil.app" target="_blank">See Live</a>
+            </div>
+          </div>
+        </div>
+</section>
+
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p></p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; Valentin 2023. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
