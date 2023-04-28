@@ -139,9 +139,9 @@ nav ul li a:hover {
   
   /* Set contact section styles */
   #contact .container {
-    text-align: center;
-    padding-top: 80px;
-    padding-bottom: 80px;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 150px;
   }
   
   #contact h2 {
@@ -248,5 +248,20 @@ nav ul li a:hover {
   
 .aligncenter {
     text-align: center;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #F9F5EB;
+  padding: 20px;
+  color: #555;
+}
+
+.footer-right ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
